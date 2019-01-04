@@ -1,5 +1,5 @@
 import React , {Component} from 'react';
-import { Animated,View, Image} from 'react-native';
+import { Animated,View} from 'react-native';
 
 export const ANIMATION_SCENE_NAME = 'ANIMATION_SCENE';
 
