@@ -16,7 +16,8 @@ import { ANIMATION_SCENE_NAME } from '../screens/AnimationScreen'
 
 import {
   Sentry,
-  SentrySeverity
+  SentrySeverity,
+  init
 } from 'react-native-sentry';
 
 Sentry.setTagsContext({
@@ -24,12 +25,16 @@ Sentry.setTagsContext({
   react: true,
 });
 
+/*Sentry.configureScope((scope) => {
+  scope.setUser({"email": "fcerfon@gmail.com"});
+});*/
+
 Sentry.setUserContext({
   email: 'florent.cerfon@gmail.com',
-  userID: '12341',
+  //userID: '12341',
   username: 'fcerfon',
   extra: {
-    isAdmin: false,
+    isAdmin: true,
   },
 });
 
