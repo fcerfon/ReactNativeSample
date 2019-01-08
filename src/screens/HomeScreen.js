@@ -25,10 +25,6 @@ Sentry.setTagsContext({
   react: true,
 });
 
-/*Sentry.configureScope((scope) => {
-  scope.setUser({"email": "fcerfon@gmail.com"});
-});*/
-
 Sentry.setUserContext({
   email: 'florent.cerfon@gmail.com',
   //userID: '12341',
@@ -64,7 +60,7 @@ export default class HomeScreen extends Component {
   }
 
   componentDidMount() {
-    Alert.alert(Config.API_URL);
+    Alert.alert("test");
   }
 
   navigateToGreetings() {
