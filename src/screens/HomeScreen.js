@@ -91,6 +91,10 @@ export default class HomeScreen extends Component {
     this.navigate(ANIMATION_SCENE_NAME);
   }
 
+  printAlert() {
+    Alert.alert("button pressed");
+  }
+
   render() {
     return (
       <ScrollView>
@@ -118,6 +122,12 @@ export default class HomeScreen extends Component {
           <Button
             onPress={this.navigateToAnimation}
             title="Navigation"
+          />
+        </View>
+        <View style={styles.margin}>
+          <Button
+            onPress={this.printAlert}
+            title="alert"
           />
         </View>
       </ScrollView>
